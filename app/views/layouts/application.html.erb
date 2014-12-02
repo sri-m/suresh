@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suresh</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		<div id="wrapper">
+			<div id="header">
+				<!-- logo -->
+				<%= render :partial => "lawyers/logo" %>
+				<div class="clr"></div>
+			</div>
+			<div class="content">
+				<!-- menu -->
+				<%= render :partial => "lawyers/menu" %>
+				<div id="pitch">
+					<h1>Sed at elit non est auctor lobortis sed nec<br />
+					Vivamus nec odio eget lacus semper</h1>
+					<p><em>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut enim risus, rhoncus sit amet ultricies vel, aliquet ut dolor. Duis iaculis urna vel massa ultricies suscipit.</em></p>
+				</div>
+				<div class="col">
+					<h2>Attorneys</h2>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices. Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<a class="link" href="#">MORE</a>
+				</div>
+				<div class="col">
+					<h2>Accidents</h2>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices. Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<a class="link" href="#">MORE</a>
+				</div>
+				<div class="col last">
+					<h2>Practice</h2>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices. Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<a class="link" href="#">MORE</a>
+				</div>
+				<div class="clr"></div>
+			</div>
+			<div id="main">
+				<!--yield -->
+				<%= yield %>
+				
+				<div class="clr"></div>
+			</div>
+			<div id="footer">
+				<p id="links">
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Use</a>
+				</p>
+				<p>
+					<a href="#">Home</a>
+					<a href="#">Practice</a>
+					<a href="#">Attorneys</a>
+					<a href="#">Accidents</a>
+					<a href="#">Customer</a>
+					<a href="#">Order</a>
+					<a href="/registers/new">Contact Us</a>
+				</p>
+				<p>Copyright &copy; 2010 &minus; Lawyer&amp;Attorney &middot; Design: Luka Cvrk, <a href="http://www.solucija.com" title="Free CSS Templates">Solucija</a> &not; <a href="http://www.lawyermarketinggroup.com/">Law Firm Marketing</a></p>
+			</div>
+		</div>
+	</body>
+</html>
