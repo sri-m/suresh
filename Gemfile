@@ -30,6 +30,7 @@ gem 'rails-observers'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'thin'
 gem 'formtastic'
+#gem 'devise'
 gem 'devise'
 
 # Use unicorn as the app server
